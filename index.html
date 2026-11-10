@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shueb Ahmed — Web3 enthusiast and crypto creator exploring blockchain and decentralized technology.">
+  <meta name="theme-color" content="#09090f">
+  <title>Shueb Ahmed | Personal Website</title>
+  <style>
+    :root {
+      --bg: #09090f;
+      --panel: #12121c;
+      --text: #f5f3ff;
+      --muted: #aaa6bd;
+      --purple: #a78bfa;
+      --purple2: #7c3aed;
+      --line: rgba(255,255,255,.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--text); background:
+        radial-gradient(ellipse at 80% 10%, rgba(124,58,237,.20), transparent 35%),
+        radial-gradient(ellipse at 10% 55%, rgba(99,102,241,.10), transparent 30%),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+    .brand { font-weight: 800; letter-spacing: .08em; }
+    .brand span { color: var(--purple); }
+    .navlinks { display: flex; gap: 22px; color: var(--muted); font-size: .94rem; }
+    .navlinks a:hover, .social a:hover { color: var(--purple); }
+    .hero { min-height: 78vh; display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 48px; padding: 76px 0; }
+    .eyebrow { color: var(--purple); text-transform: uppercase; letter-spacing: .18em; font-size: .78rem; font-weight: 800; }
+    h1 { font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: 1.04; letter-spacing: -.055em; margin: 14px 0 18px; }
+    h1 span { color: var(--purple); }
+    .lead { color: var(--muted); font-size: 1.12rem; max-width: 620px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 750; border: 1px solid var(--line); }
+    .btn.primary { background: linear-gradient(120deg, var(--purple2), #6d5dfc); border: 0; }
+    .btn:hover { transform: translateY(-2px); }
+    .portrait-wrap { display: grid; place-items: center; }
+    .portrait {
+      width: min(300px, 72vw); aspect-ratio: 1; border-radius: 50%; padding: 8px;
+      background: linear-gradient(145deg, #c4b5fd, #6d28d9, #312e81);
+      box-shadow: 0 0 75px rgba(139,92,246,.25);
+    }
+    .portrait img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; background: #201a35; }
+    .initials { width:100%; height:100%; border-radius:50%; display:grid; place-items:center; font-size:5rem; font-weight:900; background: radial-gradient(circle at 30% 20%, #514078, #171324 70%); }
+    section { padding: 64px 0; border-top: 1px solid var(--line); }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 12px; letter-spacing: -.035em; }
+    .section-copy { color: var(--muted); max-width: 720px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+    .card { background: rgba(18,18,28,.82); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: var(--muted); margin: 0; }
+    .social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .social a { border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; color: var(--muted); }
+    footer { padding: 28px 0 40px; color: var(--muted); font-size: .9rem; text-align: center; }
+    @media (max-width: 720px) {
+      .navlinks { gap: 12px; font-size: .82rem; }
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 58px 0; gap: 34px; }
+      .lead { margin-inline: auto; }
+      .actions, .social { justify-content: center; }
+      .portrait-wrap { grid-row: 1; }
+      .cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 420px) {
+      .wrap { width: min(100% - 28px, 1080px); }
+      .navlinks { gap: 9px; }
+      .navlinks a { font-size: .76rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">SHUEB<span>.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Personal Website</div>
+        <h1>Hi, I'm<br><span>Shueb Ahmed.</span></h1>
+        <p class="lead">Web3 enthusiast and crypto creator exploring blockchain, digital communities, and the future of decentralized technology.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about">Discover more</a>
+          <a class="btn" href="#connect">Connect with me</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait">
+          <!-- Replace profile.jpg with your own photo in the same folder. -->
+          <img src="profile.jpg" alt="Shueb Ahmed profile photo"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="initials" style="display:none;">SA</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">A little about me</div>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-copy">I'm Shueb Ahmed. I enjoy exploring Web3 projects, learning about blockchain technology, and being part of online communities. This website is my little corner of the internet where I can share what I'm interested in and connect with people.</p>
+      </div>
+    </section>
+
+    <section id="interests">
+      <div class="wrap">
+        <div class="eyebrow">What I explore</div>
+        <h2 class="section-title">My Interests</h2>
+        <div class="cards">
+          <article class="card"><h3>🌐 Web3</h3><p>Discovering decentralized apps, communities, and emerging ecosystems.</p></article>
+          <article class="card"><h3>₿ Crypto</h3><p>Following blockchain innovation and learning how crypto networks work.</p></article>
+          <article class="card"><h3>🚀 Digital Communities</h3><p>Connecting with builders, creators, and people sharing new ideas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect">
+      <div class="wrap">
+        <div class="eyebrow">Say hello</div>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-copy">Find me on my social platforms. Replace the sample links below with your profile URLs before publishing.</p>
+        <div class="social">
+          <a href="https://x.com/" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://discord.com/" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Shueb Ahmed. Made with curiosity.</div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
